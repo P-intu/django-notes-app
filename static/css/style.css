@@ -1,0 +1,38 @@
+body {
+    background-color: #1f1f1f;
+  
+}
+
+.card {
+    transition: transform .2s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.main-container{
+    min-height: calc( 100vh - 120px );
+    /* height: 100vh; */
+}
+input::placeholder,textarea::placeholder{
+    color: #aaa !important;
+    opacity: 1;
+}
+.pin-icon {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.pin-icon.pinned {
+    color: gold;
+}
+
+.pin-icon.unpinned {
+    color: gray;
+}
